@@ -26,6 +26,7 @@ public class NpcCCliker : MonoBehaviour
             if (Physics.Raycast(ray, out RaycastHit hit, Mathf.Infinity))
             {
                 Debug.Log(hit.point);
+                agent.SetDestination(hit.point);
             }
         }
     }
